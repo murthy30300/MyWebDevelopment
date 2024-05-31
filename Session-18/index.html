@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>CSS Box model</title>
+    <style>
+        *{
+            margin: 0;
+            padding: 0;
+        }
+        .box{
+            background-color: aqua;
+        }
+        .box1{
+            color: rgb(43, 16, 5);
+            padding:10px ;
+            margin: 50px;
+            border: 3px solid blue;
+            height: 200px;
+            /* width: 200px; */
+            box-sizing: border-box;
+        }
+        .box2{
+            color: red;
+            padding:10px ;
+            margin: 50px;
+            border: 3px solid blue;
+            height: 200px;
+            /* width: 200px; */
+            box-sizing: border-box;
+        }
+        /* Total dimension of the element
+        total width = width + left padding+right padding+leftborder+right border +left margin+ Right Margin */
+        /* 
+        total height = height +top padding+bottom padding+top border+bottom border+top margin+bottom margin */
+        /* margin collapse: if the two boxes are in the page vertically if we apply margin to each of them heighest will be picked in the result */
+    </style>
+</head>
+<body>
+    <div class="box box1">I am a box</div>
+    <div class="box box2">I am another box 2</div>
+</body>
+</html>

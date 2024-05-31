@@ -1,0 +1,68 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Internal CSS</title>
+    <style>
+        /* element selector */
+        div{
+            /* background-color: red; */
+        }
+        /* class selector */
+        .red{
+            background-color: red;
+        }
+        /* Id selector */
+        #green{
+            background-color: green;
+        }
+        /* child selector */
+        div > p{
+            color:blue;
+            background-color: brown;
+        }
+        /* descendent selector */
+        div p{
+            color: blue;
+            background-color: brown;
+        }
+        /* universal selectors */
+        *{
+            margin:0;
+            padding:0;
+        }
+        /* pseudo selector */
+        a:visited{
+            color: blue;
+        }
+        a:link{
+            color: green;
+        }
+        a:active{
+            background-color: red;
+        }
+        a:hover{
+            background-color: blueviolet;
+        }
+        p:first-child{
+            background-color: aqua;
+        }
+        p:second-child{
+            background-color: aquamarine;
+        }
+    </style>
+</head>
+<body>
+    <main class="one">
+        <p>I am first line</p>
+        <p>I am Second line</p>
+    </main>
+    <div class="red">this is class selector
+      <p>I am a paragraph inside div</p>
+    </div>
+    <div id="green">THis is Id selector</div>
+    <a href="https://www.google.com">Go to google</a>
+    <a href="https://www.instagram.com">Go to instagram</a>
+</body>
+</html>

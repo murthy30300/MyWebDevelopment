@@ -1,0 +1,72 @@
+/* .logo { 
+
+} */
+
+.logo img{
+    width: 164px;
+}
+
+nav {
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    font-family: "Segoe UI";
+}
+
+.right ul {
+    display: flex;
+    gap: 34px;
+}
+
+.right ul li {
+    list-style: none;
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+.right ul li span{
+    padding: 0 5px;
+}
+
+.container{
+    border: 1px solid black;
+    background-color:antiquewhite ;
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    gap:12px;
+}
+button{
+    color:white;
+    background: rgb(50, 214, 50);
+    padding:8px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    border: none;
+    border-radius: 6px;
+    font-weight: 600;
+    margin: 10px 0px;
+    cursor: pointer;
+}
+a{
+    text-decoration: none;
+    color: white;
+}
+.item {
+    padding: 23px;
+    background: #e4bfbf;
+    border-radius: 12px;
+    font-size: 20px;
+    font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+    text-align: center;
+}
+
+.item-lang{
+    font-weight: 700;
+    text-align: center;
+    padding-bottom: 36px;
+}
+
+@media screen and (max-width: 1145px) {
+    .grid{ 
+        grid-template-columns: 1fr; 
+    }
+}
